@@ -5,18 +5,33 @@
   --primary-white-color: #ffffff;
   --background-our-team-buttons: #f4f4fd;
   --accent-color: #4d5ae5;
+  --footer-color: #e7e9fc;
+  --secondary-accent-color: #404BBF;
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
+  color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .list {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -43,7 +58,7 @@ body {
 }
 
 .logo-span {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 /*main nav*/
@@ -87,8 +102,8 @@ body {
 
 .hero .buttons:hover,
 .hero .buttons:focus {
-  color: var(--accent-color);
-  background-color: var(--background-our-team-buttons);
+  color: var(--primary-white-color);
+  background-color: var(--secondary-accent-color);
 }
 
 .features-list h3 {
@@ -152,7 +167,7 @@ body {
   background-color: var(--secondary-color);
 }
 
-footer .link {
+footer .logo {
   color: var(--background-our-team-buttons);
 }
 
@@ -160,7 +175,7 @@ footer .link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--footer-color);
 }
 
 /*portfolio.html*/
@@ -171,8 +186,6 @@ footer .link {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--accent-color);
-  width: 116px;
-  height: 48px;
   background-color: var(--background-our-team-buttons);
 }
 
