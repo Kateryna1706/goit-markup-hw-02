@@ -12,6 +12,7 @@ body {
     color: #434455;
     background-color: var(--primary-white-color);
 }
+
 ul {
     list-style: none;
 }
@@ -20,12 +21,24 @@ ul {
     text-decoration: none;
     color: inherit;
 }
-/*header*/
-.site-nav {
-   
+
+.button {
+    font-family: inherit;
+    cursor: pointer;
 }
 
-/*logo*/
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+/*header*/
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -39,6 +52,7 @@ ul {
 .logo-span {
     color: #4D5AE5;
 }
+
 /*main nav*/
 .site-nav-list {
     font-weight: 600;
@@ -69,7 +83,7 @@ ul {
     color: var(--primary-white-color);
 }
 
-.button-hero {
+.hero .button {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.2;
@@ -77,12 +91,8 @@ ul {
     color: var(--primary-white-color);
     padding: 16px 32px;
     background-color: var(--accent-color);
-    cursor: pointer;
 }
 
-.features {
-
-}
 
 .features-list h3 {
     font-weight: 600;
@@ -91,6 +101,7 @@ ul {
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+
 .features-list p {
     font-size: 16px;
     line-height: 1.5;
@@ -98,9 +109,6 @@ ul {
     color: var(--primary-text-color);
 }
 
-.activity {
-
-}
 .activity-heading {
     font-weight: 600;
     font-size: 36px;
@@ -114,6 +122,7 @@ ul {
 .team {
     background-color: var(--background-our-team-buttons);
 }
+
 .team-heading {
     font-weight: 600;
     font-size: 36px;
@@ -123,6 +132,7 @@ ul {
     text-transform: capitalize;
     color: var(--secondary-color);
 }
+
 .team-list h3 {
     font-weight: 600;
     font-size: 20px;
@@ -131,6 +141,7 @@ ul {
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+
 .team-list p {
     font-size: 16px;
     line-height: 1.5;
@@ -138,15 +149,48 @@ ul {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
+
 .footer {
    background-color: var(--secondary-color); 
 }
-.footer .link {
+
+footer .link {
     color: var(--background-our-team-buttons);
 }
+
  .footer p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
  }
+
+ /*portfolio.html*/
+.button-list .button {
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+    width: 116px;
+    height: 48px;
+    background-color: var(--background-our-team-buttons);
+}
+
+.projects-list h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+}
+
+.projects-list p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+
+
